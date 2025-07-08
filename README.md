@@ -37,15 +37,19 @@ git clone https://github.com/nxtvrtur/CitizenAppeals.git
   "Server=[Имя_сервера];Database=CitizenAppeals;User Id=[Имя_пользователя];Password=[Пароль];Encrypt=False;"
   ```
 ### 3. Запуск и тестирование
-  1. Запустите сервер
+  1. Если некоторых зависимостей нет, выполните команду:
+```bash
+dotnet restore
+``` 
+  2. Запустите сервер
  ```bash
 cd CitizenAppeals.Server
 dotnet run
 ```
 Также сервер можно запустить через IDE, выбрав CitizenAppeals.Server (https) как запускаемый проект.
 
-2. Запустите клиент аналогичным спобом или через IDE
-3. Протестируйте функционал
+3. Запустите клиент аналогичным спобом или через IDE
+4. Протестируйте функционал
 
 ## Тестовые данные
 1. Учетная запись с ролью admin
