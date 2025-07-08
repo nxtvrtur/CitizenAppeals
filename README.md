@@ -47,7 +47,8 @@ cd CitizenAppeals.Server
 dotnet run
 ```
 Также сервер можно запустить через IDE, выбрав CitizenAppeals.Server (https) как запускаемый проект.
-
+Также можно протестировать отдельно сервер, используя Swagger или Postman.
+Для этого в файле `CitizenAppeals.Server/Properties/launchSettings.json` измените параметр "launchBrowser" на `true` и запустите сервер.
 3. Запустите клиент аналогичным спобом или через IDE
 4. Протестируйте функционал
 
