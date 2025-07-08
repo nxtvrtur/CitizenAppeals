@@ -21,7 +21,7 @@ CREATE TABLE Appeals (
 	AppealDate DATE NOT NULL,
 	CitizenId INT FOREIGN KEY REFERENCES Citizens(Id),
 	ViolationType INT NOT NULL,
-	Result NVARCHAR(20) NOT NULL CHECK (Result IN (N'Выявлено', N'Не выявлено')),
+	Result NVARCHAR(20) NOT NULL CHECK (Result IN (N'Р’С‹СЏРІР»РµРЅРѕ', N'РќРµ РІС‹СЏРІР»РµРЅРѕ')),
     AppealLink NVARCHAR(200)
 );
 
@@ -44,16 +44,16 @@ CREATE TABLE Users (
 );
 
 INSERT INTO Citizens (LastName, FirstName, MiddleName) VALUES
-(N'Губайдуллин', N'Артур', N'Ильдарович'),
-(N'Губайдуллин', N'Арсен', N'Ильдарович');
+(N'Р“СѓР±Р°Р№РґСѓР»Р»РёРЅ', N'РђСЂС‚СѓСЂ', N'РР»СЊРґР°СЂРѕРІРёС‡'),
+(N'Р“СѓР±Р°Р№РґСѓР»Р»РёРЅ', N'РђСЂСЃРµРЅ', N'РР»СЊРґР°СЂРѕРІРёС‡');
 
 INSERT INTO Executors (LastName, FirstName, MiddleName) VALUES
-(N'Нечаев', N'Артем', N'Алексеевич'),
-(N'Аюпов', N'Иван', N'Викторович');
+(N'РќРµС‡Р°РµРІ', N'РђСЂС‚РµРј', N'РђР»РµРєСЃРµРµРІРёС‡'),
+(N'РђСЋРїРѕРІ', N'РРІР°РЅ', N'Р’РёРєС‚РѕСЂРѕРІРёС‡');
 
 INSERT INTO Appeals (AppealNumber, AppealDate, CitizenId, ViolationType, Result, AppealLink) VALUES
-(N'А234', '2025-01-10', 1, 1, N'Не выявлено', N'https://t.me/arturr4evr'),
-(N'A312', '2025-02-15', 2, 2, N'Выявлено', N'https://t.me/nft/LolPop-273230');
+(N'Рђ234', '2025-01-10', 1, 1, N'РќРµ РІС‹СЏРІР»РµРЅРѕ', N'https://t.me/arturr4evr'),
+(N'A312', '2025-02-15', 2, 2, N'Р’С‹СЏРІР»РµРЅРѕ', N'https://t.me/nft/LolPop-273230');
 
 INSERT INTO AppealExecutors (AppealId, ExecutorId) VALUES
 (1, 1),
